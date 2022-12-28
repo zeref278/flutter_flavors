@@ -81,6 +81,15 @@ android {
 }
 ```
 
+If you want to change the application name, go to the AndroidManifest `android/app/src/main/AndroidManifest.xml`
+Change the `android:label` to res you defined inside `build.gradle`: 
+```xml
+android:label="@string/app_name"
+```
+![Home page](/attachment/android_manifest.png)
+
+
+
 In this code:
  - We declare a new flavor dimension called `flavor-config`, you can declare multi flavor dimension , [see details](https://developer.android.com/studio/build/build-variants#flavor-dimensions)
  - Then you specify all the product flavors and override certain properties for each value of the `flavor-config` dimension.
@@ -90,5 +99,53 @@ In this code:
 
 ## iOS setup
 
+- Open project's iOS module in Xcode
+![Home page](/attachment/open_xcode.png)
+
+- Create new scheme `dev` and `staging` target to `Runner`
+- Remove old scheme `Runner`
+![Home page](/attachment/manage_scheme.gif)
+
+- Go to the `Configuration` in `project Runner`
+![Home page](/attachment/project_runner.png)
+
+- For each environment, create 3 `configuration files` Debug, Profile and Release like this: 
+
+![Home page](/attachment/configurations.png)
+
+- For `each schemes`, edit the `build configuration` point to `configurations file` which you just created :
+
+![Home page](/attachment/edit_scheme.gif)
+
+- Change the `bunndle id` for each env:
+
+Go to `Target Runner`, search `identifier`, it will show the `Product Bundle Identifier`, you can configure `bundle id` here
+
+![Home page](/attachment/bundle_id.png)
+
+- Change the `app name`:
+
+- Add a `User-Define setting`:
+![Home page](/attachment/define_setting.png)
+
+- Named it and each environment
+![Home page](/attachment/app_display_name.png)
+
+- Set `APP_DISPLAY_NAME` to `Bundle display name` in `Info.plist`
+![Home page](/attachment/info_plist.png)
+
+## Run application
+You can run or build application by Terminal with flag `--flavor dev` or `--flavor staging`
+
+Ex: 
+```cmd
+flutter build apk --flavor dev
+```
+## Entry point
+To speed up run project, and configure advanced setting in runtime such as api endpoint, ...
+
+You can setup entry point in Android Studio and VSCode
+
+- Create 2 files `main_dev.dart` and `main_staging.dart` with the same contents as `main.dart`
 ## Firebase setup
 
