@@ -44,6 +44,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   firebase_core: ^2.3.0
   firebase_crashlytics: ^3.0.6
+  flutter_launcher_icons: ^0.11.0
 
   rest_client:
     path: packages/rest_client

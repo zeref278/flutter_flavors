@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "838780823866",
+    "project_id": "flavors-ex",
+    "storage_bucket": "flavors-ex.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838780823866:android:43f46c5ad8531f442b0803",
+        "android_client_info": {
+          "package_name": "vn.flavors.flutter_flavors_manual.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838780823866-9tp337fkrsukjuado7oqoercvpnhh2f1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv9ab29qu8jdXJytUd-ujZZSDTmvFrOCQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "838780823866-9tp337fkrsukjuado7oqoercvpnhh2f1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "838780823866-ofqsmqpv1lcchffvn9m04mn8u0hg04kh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "vn.flavors.flutterFlavorsManual.dev"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838780823866:android:9e7aad8071ee25902b0803",
+        "android_client_info": {
+          "package_name": "vn.flavors.flutter_flavors_manual.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838780823866-9tp337fkrsukjuado7oqoercvpnhh2f1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv9ab29qu8jdXJytUd-ujZZSDTmvFrOCQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "838780823866-9tp337fkrsukjuado7oqoercvpnhh2f1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "838780823866-ofqsmqpv1lcchffvn9m04mn8u0hg04kh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "vn.flavors.flutterFlavorsManual.dev"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
